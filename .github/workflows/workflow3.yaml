@@ -7,7 +7,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Command line
-              run: | 
-                git clone https://github.com/Libovskyy/MyProjects.git
-                cd MyProjects
-                python script.py
+              run: echo "Hello"
