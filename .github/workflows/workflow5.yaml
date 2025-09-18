@@ -9,6 +9,9 @@ jobs:
         - name: Install
           run: | 
             git clone https://github.com/Libovskyy/MyProjects.git
+
+        - name: get-gir
+          run: |
             cd MyProjects
-            ls
+            ls      
 
