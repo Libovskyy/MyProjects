@@ -11,4 +11,4 @@ jobs:
 
       - name: Command in Multiline
         run: | 
-          python --verison
+          python -h
