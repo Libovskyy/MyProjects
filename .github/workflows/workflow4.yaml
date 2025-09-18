@@ -1,4 +1,4 @@
-name: myWorkflows
+name: myWorkflows4
 
 on:
   workflow_run:
