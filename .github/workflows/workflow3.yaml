@@ -1,0 +1,12 @@
+name: myWorkflows
+
+on: push
+
+jobs:
+    run-my-command:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Command line
+              run:
+                pwd 
+                ls
