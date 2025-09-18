@@ -1,0 +1,14 @@
+name: HomeWorkflof
+
+on: push
+
+jobs:
+  deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Install
+          run: | 
+            git clone https://github.com/Libovskyy/MyProjects.git
+            cd MyProjects
+            ls
+
