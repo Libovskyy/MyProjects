@@ -2,7 +2,7 @@ name: myWorkflows4
 
 on:
   workflow_run:
-    sworkflows: [myWorkflows]
+    workflows: [myWorkflows]
     types:
       - completed
 
@@ -12,11 +12,11 @@ jobs:
         if: ${{ github.event.workflow_run.conclusion == 'success'}}
         steps:
             - name: Print text
-              run: echo "World"
+              run: echo "success runs myWorkflows"
 
     failed-command:
         runs-on: ubuntu-latest
         if: ${{ github.event.workflow_run.conclusion == 'failure'}}
         steps:
             - name: Print text second
-              run: echo "World"
+              run: echo "fail runs myWorkflows"
