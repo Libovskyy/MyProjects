@@ -16,5 +16,5 @@ jobs:
   run-second-command:
     runs-on: windows-latest
     steps:
-        - name: Display text
-          run: ipconfig /all
+      - name: Run ipconfig on Windows
+        run: ipconfig
