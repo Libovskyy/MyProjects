@@ -2,7 +2,7 @@ name: myWorkflows4
 
 on:
   workflow_run:
-    workflows: [myWorkflows]
+    sworkflows: [myWorkflows]
     types:
       - completed
 
