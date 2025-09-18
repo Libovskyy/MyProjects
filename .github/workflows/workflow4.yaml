@@ -1,0 +1,14 @@
+name: myWorkflows
+
+on:
+  workflow_run:
+    workflows: [myWorkflows]
+    types:
+      - completed
+
+jobs:
+    hello-command:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Command line
+              run: echo "Hello"
