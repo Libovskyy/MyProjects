@@ -7,6 +7,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Command line
-              run:
-                pwd 
-                ls
+              run: ls -a
+            - uses: actions/checkout@v5
+            
+            - name: List files
+              run: ls -a
