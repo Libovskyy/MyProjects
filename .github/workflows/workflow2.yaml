@@ -1,0 +1,20 @@
+name: Second Workflow
+
+on: [push] 
+
+jobs:
+  run-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run python script
+        run: echo "Some text"
+
+      - name: Command in Multiline
+        run: | 
+          python -h
+
+  run-second-command:
+    runs-on: windows-latest
+    steps:
+        - name: Display text
+          run: ipconfig /all
