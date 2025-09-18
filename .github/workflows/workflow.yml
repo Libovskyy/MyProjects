@@ -1,0 +1,10 @@
+name: First Workflow
+
+on: [push] 
+
+jobs:
+  run-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run python script
+        run: echo "Some text"
