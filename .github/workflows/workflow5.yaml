@@ -12,6 +12,6 @@ jobs:
 
         - name: get-gir
           run: |
-            cd MyProjects
-            ls
+            cd MyProjects && ls
+            
 
