@@ -1,0 +1,21 @@
+name: Learn
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: apt install httpd
+        run: | 
+          apt update && apt install apache2
+
+      - name: get prod
+        run: |
+          - uses: actions/checkout@v5
+          
+      - name: mv prod to httpd
+        run: |
+          mv myProject /var/www/html
+          cd /var/www/html
+          ls -l
