@@ -1,15 +1,11 @@
 name: Learn
 
 on:
-  issues:
-    types: [edited, deleted]
-  pull_request:
-    types: [assigned, closed]
+  push
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: | 
-          echo >> Hello World
+        run: echo ${{ toJson(github) }}
