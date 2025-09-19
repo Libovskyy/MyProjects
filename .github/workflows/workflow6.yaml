@@ -1,6 +1,10 @@
 name: Learn
 
-on: [issues]
+on:
+  issues:
+    types: [edited, deleted]
+  pull_request:
+    types: [assigned, closed]
 
 jobs:
   deploy:
@@ -8,4 +12,4 @@ jobs:
     steps:
       - name: print
         run: | 
-          ech >> Hello World
+          echo >> Hello World
