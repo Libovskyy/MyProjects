@@ -15,6 +15,6 @@ jobs:
           
       - name: mv prod to httpd
         run: |
-          mv myProjects /var/www/html
+          mv MyProjects /var/www/html
           cd /var/www/html
           ls -l
