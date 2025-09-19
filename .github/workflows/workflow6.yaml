@@ -1,21 +1,11 @@
 name: Learn
 
-on: [push]
+on: [issues]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: apt install httpd
+      - name: print
         run: | 
-          sudo apt update && sudo apt install apache2
-
-      - name: get prod
-        run: |
-          git clone https://github.com/Libovskyy/MyProjects.git
-          
-      - name: mv prod to httpd
-        run: |
-          sudo mv MyProjects /var/www/html
-          cd /var/www/html
-          ls -l
+          ech >> Hello World
